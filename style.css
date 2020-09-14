@@ -1,0 +1,620 @@
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  background-color: rgb(18, 3, 31);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  background: url("images/intro.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.intro_titles {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: rgb(89, 44, 160);
+  border-radius: 100%;
+  border: 10px solid rgb(172, 60, 162);
+  position: relative;
+  opacity: 0.9;
+}
+
+.intro_title {
+  margin-top: 0px;
+  font-size: 150px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  opacity: 1;
+  /* margin-top: -25px;
+    margin-left: -23px; */
+}
+
+.intro_sub {
+  /* margin-top: 75px; */
+  margin-top: 200px;
+  opacity: 1;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgb(89, 44, 160);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.nav {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  color: aliceblue;
+  margin: 0 15px;
+
+  position: relative;
+  transition: color 0.1s linear;
+}
+
+.nav_link:hover {
+  color: rgb(169, 40, 180);
+}
+
+.section {
+  padding-top: 40px;
+}
+
+.section_header {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+.section_header:hover {
+  background-color: #862986;
+  color: rgb(18, 3, 31);
+}
+
+.section_title {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(189, 179, 179);
+  text-transform: uppercase;
+  border: 3px solid #862986;
+}
+
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: url("images/jojo-background-18.png");
+}
+
+.part_item {
+  width: 20%;
+  margin: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.part_inner {
+  background-color: #c9219f;
+}
+
+.images {
+  width: 300px;
+  height: 438px;
+}
+
+.part_img {
+  background: linear-gradient(to bottom, #4b0b4b, #8f1270);
+  transition: transform 0.2s linear;
+}
+
+.part_item:hover .part_img {
+  transform: translate3d(-10px, -10px, 0);
+}
+
+.part_item:hover .part_img img {
+  opacity: 0.1;
+}
+
+.part_img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.1s linear;
+}
+
+.part_text {
+  width: 100%;
+  opacity: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: opacity 0.2s linear;
+}
+
+.part_item:hover .part_text {
+  opacity: 1;
+}
+
+.main_personages_item {
+  width: 100%;
+  margin: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main_personages_inner {
+  border: 5px solid #862986;
+}
+
+.main_personages_inner img {
+  background: linear-gradient(to bottom, #862986, #c9219f);
+  transition: transform 0.2s linear;
+  width: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.1s linear;
+}
+
+.main_personages_item:hover .main_personages_inner img {
+  opacity: 0.1;
+}
+
+.main_personages_text {
+  width: 100%;
+  opacity: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: opacity 0.2s linear;
+  padding: 10px;
+}
+
+.main_personages_item:hover .main_personages_text {
+  opacity: 1;
+}
+
+.main_antagonsts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: url("images/bgkira.png");
+}
+
+.main_antagonsts_item {
+  width: 20%;
+  margin: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.main_antagonsts_inner {
+  position: relative;
+  background-color: #c9219f;
+}
+
+.main_antagonsts_img {
+  background: linear-gradient(to bottom, #3a053a, #5f0448);
+  transition: transform 0.2s linear;
+}
+
+.main_antagonsts_img img {
+  width: 300px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.1s linear;
+}
+
+.main_antagonsts_text {
+  width: 100%;
+  opacity: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: opacity 0.2s linear;
+}
+
+.main_antagonsts_item:hover .main_antagonsts_img {
+  transform: translate3d(-10px, -10px, 0);
+}
+
+.main_antagonsts_item:hover .main_antagonsts_img img {
+  opacity: 0.1;
+}
+
+.main_antagonsts_item:hover .main_antagonsts_text {
+  opacity: 1;
+}
+
+.carousel {
+  left: 60px;
+
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-left: 0px;
+  position: relative;
+  width: 1000px;
+  padding: 50px 40px;
+  border: 5px solid rgb(220, 50, 250);
+  border-radius: 15px;
+  background: url("images/pbg.png");
+  margin-bottom: 50px;
+}
+
+.carousel img {
+  width: 330px;
+  /* height: auto; */
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid rgb(163, 133, 32);
+  font-size: 24px;
+  line-height: 24px;
+  color: #ccc;
+  display: block;
+  background-color: rgb(129, 16, 114);
+  width: 30px;
+  height: 50px;
+  box-shadow: 0 0 10px #862986;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 990px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 400px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
+
+.opening {
+  padding-top: 30px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  /* background: url('images/jojo-background-18.png'); */
+}
+
+#bg {
+  background: url("images/jojo-background-18.png");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opening_title {
+  font-size: 30px;
+  color: #df14ac;
+  width: 700px;
+  margin: 0 auto;
+  background-color: rgb(243, 230, 44);
+  margin-bottom: 30px;
+  border: 2px solid #df14ac;
+  border-radius: 25px;
+  /* border: 3px solid #c9219f; */
+}
+
+.header--op {
+  background-color: #d60fa4;
+}
+
+.opening_inner_second {
+  display: none;
+}
+
+/* .timer {
+  position: relative;
+  display: flex;
+}
+
+.timer__block {
+  text-align: center;
+  height: 300px;
+  margin: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  flex-wrap: wrap;
+  border: 3px solid #d60fa4;
+  background-color: #d60fa4;
+  width: 10%;
+} */
+/* 
+.promotion__timer {
+  margin: 0 auto;
+} */
+
+.timer,
+.promotion__text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.promotion__text {
+  border: 3px solid #df14ac;
+  color: #ccc;
+  width: 50%;
+}
+
+.promotion__text:hover {
+  background-color: #c9219f;
+}
+
+.promotion__text .title {
+  font-size: 30px;
+}
+
+.promotion__timer .title {
+  text-align: center;
+  font-size: 25px;
+  color: #c9219f;
+}
+
+.timer__block {
+  /* margin: 0 auto;
+  background: #eee;
+  float: left;
+  width: 10.5%;
+  margin-right: 2%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; */
+  width: 90px;
+  height: 150px;
+  display: inline-block;
+
+  font-size: 30px;
+  font-weight: bold;
+  color: #ccc;
+  vertical-align: top;
+
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  flex-wrap: wrap;
+  border: 3px solid #d60fa4;
+  background-color: #5f0448;
+  box-shadow: 0 0 10px #862986;
+}
+
+.timer__block:hover {
+  background-color: #d60fa4;
+}
+
+.timer__block span {
+  font-size: 70px;
+}
+
+.navigation {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: -40px;
+  z-index: 1000;
+}
+
+.child {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  flex-wrap: wrap;
+  color: #5f0448;
+  z-index: 1000;
+}
+
+#pre {
+  background-color: #8f1270;
+  width: 40px;
+  height: 30px;
+  border: none;
+  color: #ccc;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#pre:hover {
+  background-color: #d60fa4;
+  transform: scale(1.2);
+}
+
+#next {
+  background-color: #8f1270;
+  width: 40px;
+  height: 30px;
+  border: none;
+  color: #ccc;
+  font-weight: bold;
+  transition: 1s;
+}
+
+#next:hover {
+  background-color: #d60fa4;
+  transform: scale(1.2);
+}
+
+.cal_wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#cal {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 0 0 10px #862986;
+  z-index: 1;
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-spacing: 0ch;
+  font-size: 40px;
+  color: #d60fa4;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+th {
+  background-color: #d60fa4;
+  color: #3a053a;
+  border-color: black;
+  /* border-bottom-color: #fff; */
+}
+
+td {
+  border-color: #d60fa4;
+}
+
+th:hover {
+  background-color: #3a053a;
+  color: #d60fa4;
+}
+
+td:hover {
+  background-color: #d60fa4;
+  color: #3a053a;
+}
+
+.clock_item {
+  position: relative;
+}
+
+#today {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 300px;
+  border: 4px solid #df14ac;
+  color: #df14ac;
+  text-align: center;
+  font-size: 40px;
+}
+
+caption {
+  color: rgb(129, 16, 114);
+  font-size: 30px;
+}
